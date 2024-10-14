@@ -12,11 +12,13 @@ namespace BlackJack.Module
         public event Action<string> OnPlayerMessage;
         public event Action<string> OnPlayerHandUpdate;
 
-        public Player(int initialBalance = 1000)
+        public Player(int initialBalance = 10000)
         {
             balance = initialBalance;
             hand = new List<Card>();
         }
+
+        public int Balance => balance;
 
         //Method for Player???
         //public void stand()
@@ -50,12 +52,10 @@ namespace BlackJack.Module
             if (balance >= amount)
             {
                 balance -= amount;
-                OnPlayerMessage?.Invoke($"Player places a bet of {amount}. Remaining balance: {balance}");
                 return true;
             }
             else
             {
-                OnPlayerMessage?.Invoke("Insufficient balance to place this bet.");
                 return false;
             }
         }
@@ -67,7 +67,7 @@ namespace BlackJack.Module
 
         public void loseBet(int amount)
         {
-            OnPlayerMessage?.Invoke($"Player loses {amount}. Remaining balance: {balance}");
+            //Nodig?
         }
 
         public void receiveCard(Card card)
@@ -121,8 +121,6 @@ namespace BlackJack.Module
         {
             return calculateScore() > 21;
         }
-
-        public int Balance => balance;
 
         public void clearHand()
         {

@@ -8,12 +8,47 @@
             Padding="30,0"
             Spacing="25">
             <Label
-            Text="Rules"
+            Text="Regels"
             Style="{StaticResource Headline}"
             SemanticProperties.HeadingLevel="Level1" />
 
             <Label 
-            Text="Lorem ipsum dolor sit amet. Et perspiciatis unde ut aspernatur eius ad sint beatae. Aut commodi necessitatibus ea fugit consequuntur ut explicabo aspernatur et officiis veritatis sed maiores accusamus et nobis magni aut quisquam facilis. Aut iure rerum et deleniti dolor ad voluptas rerum qui tempora earum ex laborum earum ab rerum perferendis sit dolorem necessitatibus."
+            Text="Blackjack is een kaartspel waarbij het doel is om een handwaarde te hebben die zo dicht mogelijk bij 21 ligt, zonder deze te overschrijden. Je speelt tegen de dealer. Hier zijn de basisregels:"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+            <Label 
+            Text="1. Het spel wordt gespeeld met één of meerdere decks van 52 kaarten. Kaarten 2 tot en met 10 zijn hun getalwaarde waard, plaatjeskaarten (Boer, Vrouw, Koning) zijn 10 punten waard en Azen kunnen 1 of 11 punten waard zijn, afhankelijk van wat voordelig is voor jouw hand."
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+            <Label 
+            Text="2. Jij en de dealer krijgen elk twee kaarten. Jouw kaarten worden open gedeeld, terwijl de dealer één kaart open en één kaart gesloten (de 'hole card') heeft."
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+            <Label 
+            Text="3. Jij mag beslissen of je een extra kaart neemt ('Hit') of dat je je huidige hand behoudt ('Stand'). Het doel is om zo dicht mogelijk bij 21 te komen zonder eroverheen te gaan ('bust')."
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+            <Label 
+            Text="4. Als je denkt dat je een goede hand hebt, kun je ook je inzet verdubbelen ('Double Down') en krijg je één extra kaart. Als je twee kaarten van dezelfde waarde hebt, kun je ook kiezen om ze te splitsen ('Split') in twee aparte handen."
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+            <Label 
+            Text="5. Nadat je jouw beurt hebt beëindigd, onthult de dealer zijn gesloten kaart. De dealer moet kaarten blijven trekken tot hij een totaal van minstens 17 heeft bereikt. De dealer gaat 'bust' als zijn handwaarde boven de 21 uitkomt."
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+            <Label 
+            Text="6. Als jouw handwaarde hoger is dan die van de dealer zonder over de 21 te gaan, win je. Als de dealer een hogere handwaarde heeft of als jij bust, verlies je."
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+            <Label 
+            Text="7. Als jouw handwaarde gelijk is aan die van de dealer, is het een 'push' en krijg je je inzet terug."
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
         </VerticalStackLayout>

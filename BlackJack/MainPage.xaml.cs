@@ -18,8 +18,6 @@ namespace BlackJack
 
         private async void onStartGameClicked(object sender, EventArgs e)
         {
-            Game game = new Game();
-            await game.startGame();
             await Navigation.PushAsync(new GamePage());
         }
 

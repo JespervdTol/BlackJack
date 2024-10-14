@@ -34,6 +34,7 @@
                    Keyboard="Numeric"
                    HorizontalOptions="Center"
                    Margin="0,10,0,0"
+                   TextColor="White"
                    IsVisible="True"/>
 
             <Button x:Name="PlaceBetButton"

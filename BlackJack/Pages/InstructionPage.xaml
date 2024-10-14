@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BlackJack.Pages.InstructionPage"
+             Title="InstructionPage">
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Label
+            Text="Rules"
+            Style="{StaticResource Headline}"
+            SemanticProperties.HeadingLevel="Level1" />
+
+            <Label 
+            Text="Lorem ipsum dolor sit amet. Et perspiciatis unde ut aspernatur eius ad sint beatae. Aut commodi necessitatibus ea fugit consequuntur ut explicabo aspernatur et officiis veritatis sed maiores accusamus et nobis magni aut quisquam facilis. Aut iure rerum et deleniti dolor ad voluptas rerum qui tempora earum ex laborum earum ab rerum perferendis sit dolorem necessitatibus."
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

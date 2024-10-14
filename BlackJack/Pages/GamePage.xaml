@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BlackJack.Pages.GamePage"
+             Title="GamePage">
+    <ScrollView>
+        <VerticalStackLayout Padding="10">
+            <Label x:Name="StatusLabel" 
+                   Text="Waiting for the game to start..." 
+                   FontSize="20" 
+                   HorizontalOptions="Center" 
+                   Margin="0,10,0,10" />
+
+            <Label x:Name="PlayerBalanceLabel" 
+                   Text="Balance: $1000" 
+                   FontSize="18" 
+                   HorizontalOptions="Center" 
+                   Margin="0,5,0,5" />
+
+            <Label x:Name="PlayerHandLabel" 
+                   Text="" 
+                   FontSize="18" 
+                   HorizontalOptions="Center" 
+                   Margin="0,5,0,5" />
+
+            <Label x:Name="DealerHandLabel" 
+                   Text="" 
+                   FontSize="18" 
+                   HorizontalOptions="Center" 
+                   Margin="0,5,0,15" />
+
+            <Entry x:Name="BetAmountEntry"
+                   Placeholder="Enter your bet amount"
+                   Keyboard="Numeric"
+                   HorizontalOptions="Center"
+                   Margin="0,10,0,0"
+                   IsVisible="True"/>
+
+            <Button x:Name="PlaceBetButton"
+                    Text="Place Bet"
+                    Clicked="OnPlaceBetButtonClicked"
+                    HorizontalOptions="Center"
+                    Margin="0,10,0,0"
+                    IsVisible="True"/>
+
+            <Button x:Name="HitButton"
+                    Text="Hit"
+                    Clicked="onHitButtonClicked"
+                    HorizontalOptions="Center"
+                    Margin="0,10,0,0" 
+                    IsEnabled="False"
+                    IsVisible="False"/>
+
+            <Button x:Name="StandButton"
+                    Text="Stand"
+                    Clicked="onStandButtonClicked"
+                    HorizontalOptions="Center"
+                    Margin="0,10,0,0" 
+                    IsEnabled="False"
+                    IsVisible="False"/>
+
+            <Button x:Name="DoubleDownButton"
+                    Text="Double Down"
+                    Clicked="OnDoubleDownButtonClicked"
+                    HorizontalOptions="Center"
+                    Margin="0,10,0,0" 
+                    IsEnabled="False"
+                    IsVisible="False"/>
+
+            <Button x:Name="NextRoundButton"
+                    Text="Next Round"
+                    IsEnabled="False"
+                    Clicked="OnNextRoundButtonClicked"
+                    IsVisible="False"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

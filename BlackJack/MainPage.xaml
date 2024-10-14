@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BlackJack.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="fontys_logo.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="fontys logo" />
+
+            <Label
+                Text="Fontys HBO-ICT Project"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Button
+                x:Name="StartBtn"
+                Text="Start Game" 
+                SemanticProperties.Hint="Redirects to game page"
+                Clicked="onStartGameClicked"
+                HorizontalOptions="Fill" />
+            <Button
+                x:Name="RulesBtn"
+                Text="Rules" 
+                SemanticProperties.Hint="Redirects to instructions page"
+                Clicked="onInstructionsClicked"
+                HorizontalOptions="Fill" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
